@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example of attribute selector</title>
+    <style>
+        * {
+            background-color: green;
+        }
+
+        h1 {
+            color: red;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: large;
+            font-weight: 400;
+        }
+
+        #sel {
+            color: blue;
+        }
+
+        .sle {
+            color: brown;
+        }
+
+        #des p {
+            color: yellow;
+        }
+
+        #chi>p {
+            color: orangered;
+        }
+
+        .adj+p {
+            background-color: yellow;
+        }
+
+        #sib~p {
+            background-color: aqua;
+        }
+
+        [title] {
+            color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>UNIVERSAL SELECTOR</h1>
+    <p>This is Selector</p>
+
+    <h1>Element Selector</h1>
+    <p>This is a element selector</p>
+
+    <h1 id="sel">ID selector</h1>
+    <p>This is selected with ID</p>
+
+    <h1 class="sle">class selector</h1>
+    <p>This is selected with class</p>
+
+    <div id="des">
+        <h1>Descendant Selector</h1>
+        <p> Para 1</p>
+        <p> Para 2</p>
+        <p> Para 3</p>
+    </div>
+    <h1> Child Selectors</h1>
+    <div id="chi">
+        <p>Paragraph 1 in the div.</p>
+        <p>Paragraph 2 in the div.</p>
+        <section>
+            <p>Paragraph 3 in the div (inside a section element).</p>
+        </section>
+        <p>Paragraph 4 in the div.</p>
+    </div>
+    <p>Paragraph 5. Not in a div.</p>
+    <p>Paragraph 6. Not in a div.</p>
+
+    <h1>Adjacent Sibling Selector</h1>
+    <div class="adj">
+        <p>Paragraph 1 in the div.</p>
+        <p>Paragraph 2 in the div.</p>
+    </div>
+
+    <p>Paragraph 3. After a div.</p>
+    <p>Paragraph 4. After a div.</p>
+
+    <div class="adj">
+        <p>Paragraph 5 in the div.</p>
+        <p>Paragraph 6 in the div.</p>
+    </div>
+
+    <p>Paragraph 7. After a div.</p>
+    <p>Paragraph 8. After a div.</p>
+
+    <h1>General Sibling Selector</h1>
+    <p>Paragraph 1.</p>
+
+    <div id="sib">
+        <p>Paragraph 2.</p>
+    </div>
+
+    <p>Paragraph 3.</p>
+    <code>Some code.</code>
+    <p>Paragraph 4.</p>
+
+    <h1>Attribute Selector</h1>
+
+
+</body>
+
+</html>

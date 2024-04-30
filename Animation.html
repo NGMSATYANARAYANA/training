@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 16s; /* Increase duration to accommodate more colors */
+  animation-iteration-count: infinite; /* Make the animation repeat infinitely */
+}
+
+@keyframes example {
+  0% {background-color: red;}
+  12.5% {background-color: orange;}
+  25% {background-color: yellow;}
+  37.5% {background-color: green;}
+  50% {background-color: blue;}
+  62.5% {background-color: indigo;}
+  75% {background-color: violet;}
+  87.5% {background-color: purple;}
+  100% {background-color: red;} /* Revert to the initial color to make it seamless */
+}
+</style>
+</head>
+<body>
+
+<h1>CSS Animation</h1>
+
+<div></div>
+
+<p><b>Note:</b> The animation will cycle through the specified colors indefinitely.</p>
+
+</body>
+</html>

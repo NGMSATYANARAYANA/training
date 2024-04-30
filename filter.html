@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#b {
+  filter: grayscale(100%);
+}
+#a {
+  filter: blur(5px);
+}
+img.background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+  filter: blur(35px);
+}
+
+img.circle {
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+  height: auto;
+  max-width: 60%;
+}
+#c{
+  filter: brightness(200%);
+}
+#d {
+  filter: contrast(200%);
+}
+#e{
+  filter: drop-shadow(8px 8px 10px gray);
+}
+#f {
+  filter: hue-rotate(90deg);
+}
+#g{
+  filter: invert(100%);
+}
+#h {
+  filter: opacity(30%);
+}
+#i {
+  filter: saturate(800%);
+}
+#j{
+  filter: sepia(100%);
+  
+}
+</style>
+</head>
+<body>
+
+
+
+
+
+<p>Blurred background:</p>
+
+<img class="background" src="../training/bank.jpg" alt="bank" width="30" height="30">
+<img class="circle" src="../training/bank.jpg" alt="bank" width="300" height="300">
+
+<p>Convert the image to grayscale:</p>
+
+<img  id="b" src="../training/bank.jpg" alt="bank" width="300" height="300">
+<p>Apply a blur effect to the image:</p>
+<img id="a" src="../training/bank.jpg" alt="bank" width="300" height="300">
+<p>Adjust the brightness of the image:</p>
+
+<img id="c" src="../training/bank.jpg" alt="bank" width="300" height="300">
+<p>Adjust the contrast of the image:</p>
+
+<img id="d" src="../training/bank.jpg" alt="bank" width="300" height="300">
+<p>Apply a drop shadow effect to the image:Apply a drop shadow effect to the image:</p>
+
+<img id="e" src="../training/bank.jpg" alt="bank" width="300" height="300">
+<p>Apply a hue rotation on the image:</p>
+
+<img id="f" src="../training/bank.jpg" alt="bank" width="300" height="300">
+<p>Invert the samples in the image:</p>
+
+<img id="g" src="../training/bank.jpg" alt="bank" width="300" height="300">
+<p>Change the opacity level for the image:</p>
+
+<img id="h" src="../training/bank.jpg" alt="bank" width="300" height="300">
+<p>Saturate the image:</p>
+
+<img id="i" src="../training/bank.jpg" alt="bank" width="300" height="300">
+<p>Convert the image to sepia:</p>
+
+<img id="j" src="../training/bank.jpg" alt="bank" width="300" height="300">
+</body>
+</html>
